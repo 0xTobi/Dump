@@ -25,10 +25,9 @@ console.log(userEmail)                                          // The return va
 
 
 
-function loginUser(email, password, callback) {
+function loginUser2(email, password, callback) {
     setTimeout(() => {
-        return {userEmail: email}
-        callback()
+        callback({userEmail: email})
     }, 1500);
 }
 

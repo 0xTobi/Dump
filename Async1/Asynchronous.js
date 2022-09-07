@@ -8,22 +8,22 @@ function getPosts() {
     setTimeout(() => {
         let output = "";
         posts.forEach((post) => {
-            output += `<li>${post.name} is ${post.age}`
+            output += `<li>${post.name} is ${post.age}<li>`
         })
         document.body.innerHTML = output;
     }, 1000)
 }
 
 
-// // COMMENT THIS OUT TO USE BELOW FUNCTION.
-//     function createPost(post) {
-//         setTimeout(() => {
-//             posts.push(post)
-//         }, 2000)
-//     }
+// COMMENT THIS OUT TO USE BELOW FUNCTION.
+    // function createPost(post) {
+    //     setTimeout(() => {
+    //         posts.push(post)
+    //     }, 2000)
+    // }
 
-//     getPosts()
-//     createPost({name: "Marvy", age: 21})
+    // createPost({name: "Marvy", age: 21})
+    // getPosts()
 
 //     // Call getPost function that paints the contents of the post array to the DOM in 1 second.
 //     // While waiting for the 1 second it goes ahead to execute the other function, which takes about 2 seconds to complete.
