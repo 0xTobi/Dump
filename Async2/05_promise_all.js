@@ -12,7 +12,7 @@ const fb = new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log("Stuff from Facebook");
         resolve({username: "Tobi"});
-    }, 7000)
+    }, 2000)
 })
 
 Promise.all([yt, fb]).then((result) => {
